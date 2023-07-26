@@ -3,4 +3,5 @@ rootProject.name='gs-ms'
 include('discovery')
 include('course')
 include('core')
+include('gateway')
 

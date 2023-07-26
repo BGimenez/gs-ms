@@ -10,10 +10,10 @@ services:
     ports:
       - 3306:3306
     environment:
-      MYSQL_USER: root
       MYSQL_ROOT_PASSWORD: bgimenez
     volumes:
       - microservices_gsistemas:/var/lib/mysql
+#      MYSQL_USER: root
 
 volumes:
   microservices_gsistemas:
