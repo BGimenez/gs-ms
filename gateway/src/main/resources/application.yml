@@ -8,6 +8,11 @@ spring:
           enabled: true
           lower-case-service-id: true
 
+application:
+  title: Gateway
+  version: 1.0
+  author: bgimenez
+
 server:
   port: 8060
 #  servlet:
