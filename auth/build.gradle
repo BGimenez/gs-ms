@@ -1,0 +1,29 @@
+plugins {
+	id 'org.springframework.boot' version '3.1.2'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+dependencies {
+	implementation project(":core")
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+
+    implementation 'jakarta.servlet:jakarta.servlet-api'
+	implementation 'com.fasterxml.jackson.core:jackson-databind'
+	implementation 'com.nimbusds:nimbus-jose-jwt:9.31'
+
+    compileOnly 'org.projectlombok:lombok'
+
+	annotationProcessor 'org.projectlombok:lombok'
+
+	testImplementation 'org.springframework.security:spring-security-test'
+}
